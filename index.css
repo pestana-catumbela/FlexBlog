@@ -1,0 +1,383 @@
+/* RESET CSS */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* STYLING TYPE`S SELECTOR */
+body{
+    color: #222222;
+    box-sizing: border-box;
+    font-family: 'Monito', Helvetica, Arial, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* STYLING INFO AREA */
+.superinfo-bg{
+    color: #FFFFFF;
+    background-color: #122ab2;
+}
+
+.superinfo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0px 10px 10px 10px;
+}
+
+.superinfo p, .superinfo a{
+    padding-top: 10px;
+}
+
+.superinfo a{
+    color: #FFFFFF;
+}
+
+/* STILING MENU */
+.menu-bg{
+    background-color: #2c70ff;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 15px 0px;
+}
+
+.menu a{
+    color: #FFFFFF;
+}
+
+.menu-logo a{
+    margin: 0px 10px;
+    font-weight: bold;
+    font-size: 2.25em;
+}
+
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a{
+    padding: 10px;
+    display: block;
+    font-size: 1.25em;
+}
+
+.menu-nav a:hover{
+    color: #f3efef;
+}
+
+/*STILING INTRODUCTION*/
+.introducao{
+    font-size: 3em;
+    line-height: 1;
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 60px 10px;
+}
+
+/*STILING ABOUT SECTION*/
+.sobre{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 960px;
+    padding: 60px 0px;
+    border-top: 2px SOLID #2c70ff;
+    border-bottom: 2px SOLID #2c70ff;
+}
+
+.sobre-info{
+    flex: 2 1 300px;
+    margin: 0 10px;
+}
+
+.sobre img{
+    margin: 0 10px;
+    flex: 1 1 160px;
+}
+
+.sobre-info h1{
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.sobre-info p{
+    color: #7c7c7c;
+    line-height: 1.4;
+    font-size: 1.25em;
+    margin-bottom: 1em;
+}
+
+/*STILING PRODUCT SECTION*/
+.produtos{
+    margin: 60px auto;
+    max-width: 960px;
+}
+
+.produtos h1{
+    font-size: 3em;
+    margin: 0px 10px 60px 10px;
+}
+
+.produtos-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.produtos-item{
+    margin: 10px;
+    flex: 1 1 175px;
+}
+
+.produtos-item h2{
+    color: #a4a4a4;
+    font-size: 3em;
+    padding: 60px 20px;
+    background: #f7f7f7;
+}
+
+.purple{
+    border-top: 8px SOLID #ae81ff;
+}
+
+.pink{
+    border-top: 8px SOLID #f9265e;
+}
+
+.blue{
+    border-top: 8px SOLID #66d9eb;
+}
+
+/*STILING PRICE SECTION*/
+.preco{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    background: #f7f7f7;
+    padding: 60px;
+}
+
+.preco-item{
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 4px SOLID #FFFFFF;
+}
+
+.preco-item h2{
+    color: #a4a4a4;
+    font-size: 3em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.preco-item span{
+    display: block;
+    max-width: 300px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
+    margin: 20px auto;
+    padding: 10px 0px 10px 0px;
+    border-top: 4px SOLID #FFF;
+    border-bottom: 4px SOLID #FFF;
+}
+
+.preco-item sup{
+    font-size: 1.5rem;
+}
+
+.preco-item ul{
+    color: #c7c7c7;
+    line-height: 1;
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+.preco-item li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.preco-item li::after{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #2c70ff;
+    border-radius: 50%;
+}
+
+.preco-item a{
+    color: #222222;
+    display: block;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 15px 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.25em;
+    border: 4px SOLID;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    .preco{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    preco .preco-item:nth-child(3){
+        order: -2;
+    }
+
+    .preco .preco-item:nth-child(2){
+        order: -1;
+    }
+}
+
+/*STYLING QUALITY SECTION*/
+.qualidade{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 60px auto;
+}
+
+.qualidade-item{
+    flex: 1 1 300px;
+    margin: 20px 10px;
+}
+
+.qualidade-item h2:before{
+    content: '';
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.qualidade-item:nth-of-type(3n+1) h2::before{
+    background: #ae81ff;
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before{
+    background: #f9265e;
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before{
+    background: #66d9eb;
+}
+
+.qualidade-item p{
+    color: #c7c7c7;
+    line-height: 1.4;
+    font-size: 1.25em;
+}
+
+/*STYLING NEWSLETTER SECTION*/
+.newsletter{
+    display: flex;
+    flex-wrap: wrap;
+    background: #f7f7f7;
+    padding: 60px calc((100% - 960px) / 2);
+}
+
+.newsletter-info{
+    flex: 1 1 260px;
+    margin: 0 10px;
+}
+
+.newsletter-info h1{
+    color: #a4a4a4;
+    font-size: 3em;
+}
+
+.newsletter-info p{
+    color: #c7c7c7;
+    max-width: 230px;
+    font-size: 1.25em;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.newsletter-form{
+    display: flex;
+    align-self: center;
+    flex: 3 1 260px;
+    margin: 0 10px;
+}
+
+.newsletter-form input{
+    flex: 3 1 200px;
+    font-size: 1.25em;
+    color: #c7c7c7;
+    font-style: italic;
+    font-family: 'Monito', Helvetica, Arial, sans-serif;
+    border: 4px SOLID #2c70ff;
+    background: transparent;
+    padding: 15px 10px;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+.newsletter-form button{
+    flex: 1 1 260px;
+    font-family: 'Monito', Helvetica, Arial, sans-serif;
+    font-size: 2.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #2c70ff;
+    color: #FFFFFF;
+    margin: 0px;
+    cursor: pointer;
+    border: 0px;
+    padding: 15px 10px;
+}
+
+@media (max-width: 600px) {
+    .newsletter-form button{
+        font-size: 1.5em;
+    }
+}
+
+/*STYLING FOOTER SECTION*/
+.footer{
+    display: flex;
+    align-items: center;
+    background: #2c70ff;
+    height: 200px;
+}
+
+.footer p{
+    flex: 1;
+    text-align: center;
+    font-size: 2.25em;
+    color: #122ab2;
+}
